@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1::before {
+            content: "這是fake元素 ";
+            background-color: bisque;
+        }
+
+        h1::after {
+            width: 100px;
+            height: 100px;
+            /* display: block; */
+            content: " Happy";
+            background-image: url(imgs/star.jpeg);
+            color: rgb(26, 92, 70);
+            position: absolute;
+            left: calc((100% - 100px) / 2);
+            top: calc((100% - 100px) / 2);
+        }
+
+        h1 {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            background-color: aquamarine;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        p::selection {
+            background-color: rgb(209, 93, 93);
+        }
+
+        p {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>這是真的Html</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consectetur assumenda ratione. Veritatis magnam
+        officiis suscipit voluptate temporibus vero quos. Nostrum at ipsa assumenda, neque expedita sapiente reiciendis,
+        quo deleniti odio fugiat ab delectus magni inventore? Ad magni, dicta nisi repellendus dolore excepturi
+        reprehenderit corporis ullam repudiandae fuga asperiores porro?</p>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7/16 Homework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        header {
+            border-bottom: 1px dotted rgb(192, 136, 45);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 5%;
+            padding: 0px 0px 5px 10px;
+        }
+
+        .menu-item {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-item li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            padding: 1.5rem;
+        }
+
+        .menu-item a:hover {
+            background-color: orange;
+        }
+
+        .section1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .title1 {
+            background-color: aqua;
+            width: 100%;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .date {
+            list-style: none;
+            padding: 3rem 3rem 0 10rem;
+
+        }
+
+        .news {
+            list-style: none;
+            padding: 3rem 3rem 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../../02_CSS2進階/imgs/logo.png" alt="cake">
+        <nav class="navbar">
+            <ul class="menu-item">
+                <li><a href="">最新消息</a></li>
+                <li><a href="">產品介紹</a></li>
+                <li><a href="">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section1">
+        <div class="title1">最新消息</div>
+        <ul class="date">
+            <li>2024-06-23</li>
+            <li>2024-05-30</li>
+            <li>2024-05-01</li>
+        </ul>
+        <ul class="news">
+            <li>新品上市，優惠７折</li>
+            <li>預定生日蛋糕送好禮</li>
+            <li>母親節蛋糕特惠中</li>
+        </ul>
+    </section>
+    <section class="section2">
+        <div class="title2">產品分類
+            <div class="img1"><img src="../../02_CSS2進階/imgs/cake-cover.jpg" alt="cake">蛋糕</div>
+            <div class="img2"><img src="../../02_CSS2進階/imgs/bread.jpg" alt="cake">麵包</div>
+            <div class="img3"><img src="../../02_CSS2進階/imgs/dessert.jpg" alt="cake">甜點</div>
+        </div>
+    </section>
+    <footer>copyright@2023</footer>
+
+</body>
+
+</html>

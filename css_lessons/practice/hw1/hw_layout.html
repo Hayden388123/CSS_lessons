@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7/16 Homework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        header {
+            border-bottom: 1px dotted rgb(192, 136, 45);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            padding: 0px 0px 0px 10px;
+        }
+
+        .menu-item {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-item li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            padding: 2.5rem;
+        }
+
+        .menu-item a:hover {
+            background-color: orange;
+        }
+
+        .container1 {
+            width: 100%;
+            padding: 0 15%;
+        }
+
+        .news-item {
+            display: flex;
+            align-items: baseline;
+            width: 100%;
+            border-bottom: 1px dotted black;
+            padding: 10px;
+        }
+
+        .date {
+            margin-right: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 3rem;
+        }
+
+        .container2 {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item:nth-child(1) {
+            background-color: rgb(126, 126, 201);
+        }
+
+        .item:nth-child(2) {
+            background-color: tomato;
+        }
+
+        .item:nth-child(3) {
+            background-color: rgb(82, 203, 219);
+        }
+
+        .item {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./imgs/logo.png" alt="cake">
+        <nav class="navbar">
+            <ul class="menu-item">
+                <li><a href="">最新消息</a></li>
+                <li><a href="">產品介紹</a></li>
+                <li><a href="">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section1">
+        <h1>最新消息</h1>
+        <div class="container1">
+            <div class="news-item">
+                <div class="date">2023-06-23</div>
+                <div class="title">新品上市，優惠7折</div>
+            </div>
+            <div class="news-item">
+                <div class="date">2023-05-30</div>
+                <div class="title">預訂生日蛋糕送好禮</div>
+            </div>
+            <div class="news-item">
+                <div class="date">2023-05-01</div>
+                <div class="title">母親節蛋糕特惠中</div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <h1>產品分類</h1>
+        <div class="container2">
+            <div class="item">
+                <img src="./imgs/cake-cover.jpg" alt="cake">
+                <p>蛋糕</p>
+            </div>
+            <div class="item">
+                <img src="./imgs/bread.jpg" alt="bread">
+                <p>麵包</p>
+            </div>
+            <div class="item">
+                <img src="./imgs/dessert.jpg" alt=" dessert">
+                <p>點心</p>
+            </div>
+        </div>
+    </section>
+    <footer>copyright@2023</footer>
+
+</body>
+
+</html>

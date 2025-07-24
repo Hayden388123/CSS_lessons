@@ -1,0 +1,226 @@
+/* 全域 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-family: "Inter", sans-serif;
+    --main-color: #D9D9D9;
+    --secondary-color: #EFEFEF;
+}
+
+body {
+    font-family: var(--main-font-family);
+}
+
+header {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+
+}
+
+.logo {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 36px;
+
+}
+
+.bar {
+    font-size: 40px;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list li {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* ============
+Title1&Celebrity 
+==============*/
+.container1 {
+    width: 80%;
+    margin: auto;
+    padding: 1.875rem 0;
+}
+
+.celebrity {
+    font-size: .875rem;
+    margin-bottom: .625rem;
+}
+
+.h1-1 {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+/* ============
+Photo&About
+==============*/
+.container2 {
+    width: 80%;
+    margin: auto;
+    padding: 1.875rem 0;
+}
+
+.photo1 {
+    width: 80%;
+    height: 25rem;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -0.9375rem .9375rem 0 #FFB2B2;
+}
+
+img {
+    display: block;
+    margin-left: -4.375rem;
+    margin-top: -1.875rem;
+}
+
+.about {
+    width: 95%;
+    margin: auto;
+}
+
+.text {
+    width: 100%;
+    padding: 1.5625rem 0;
+}
+
+.p1 {
+    font-size: 1.25rem;
+    padding-bottom: .625rem;
+}
+
+.p2 {
+    font-size: .875rem;
+    padding-bottom: .625rem;
+    line-height: 1.5625rem;
+}
+
+.school {
+    width: 100%;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.25rem;
+    padding-bottom: .625rem;
+}
+
+.degree {
+    background-color: var(--secondary-color);
+    padding: .625rem;
+    margin-bottom: 1.25rem;
+    border-radius: .625rem;
+}
+
+.p3 {
+    font-size: 1rem;
+    padding-bottom: .625rem;
+}
+
+.p4 {
+    font-size: .875rem;
+    color: #615D5D;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-percent {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 2px #000000 inset;
+}
+
+/**** 電腦 ****/
+@media screen and (min-width:1024px) {
+    .logo {
+        padding: 20px 80px;
+    }
+
+    .bar {
+        display: none
+    }
+
+    .navbar {
+        width: 40%;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .menu-list li {
+        font-size: 24px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* ============
+Title1&Celebrity 
+==============*/
+    .container1 {
+        width: 70%;
+        padding: 6.25rem 0;
+    }
+
+    .celebrity {
+        font-size: 3rem;
+    }
+
+    .h1-1 {
+        font-size: 4rem;
+    }
+
+    /* ============
+Photo&About
+==============*/
+    .container2 {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    .photo1 {
+        width: 35%;
+    }
+
+    .about {
+        background-color: #FFE3E3;
+        width: 45%;
+        padding: 0 20px;
+
+    }
+
+    .text {}
+}

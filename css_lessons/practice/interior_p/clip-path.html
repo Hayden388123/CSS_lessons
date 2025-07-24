@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip path</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        }
+
+        .flip-scale-up-hor:hover {
+            animation: flip-scale-up-hor 0.5s linear both;
+        }
+
+        @keyframes flip-scale-up-hor {
+            0% {
+                -webkit-transform: scale(1) rotateX(0);
+                transform: scale(1) rotateX(0);
+            }
+
+            50% {
+                -webkit-transform: scale(2.5) rotateX(-90deg);
+                transform: scale(2.5) rotateX(-90deg);
+            }
+
+            100% {
+                -webkit-transform: scale(1) rotateX(-180deg);
+                transform: scale(1) rotateX(-180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="flip-scale-up-hor" src="images/articles/article1.jpg" alt="">
+</body>
+
+</html>

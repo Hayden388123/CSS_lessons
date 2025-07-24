@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>區塊置中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box1 {
+            width: 80%;
+            height: 500px;
+            background-color: bisque;
+            margin: auto;
+            position: relative;
+        }
+
+        #box2 {
+            width: 10%;
+            height: 200px;
+            background-color: rgb(139, 109, 75);
+            position: absolute;
+            left: calc((100% - 10%) / 2);
+            top: calc((500px - 200px) / 2);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>練習置中</h2>
+    <div id="box1">
+        <div id="box2"></div>
+    </div>
+</body>
+
+</html>

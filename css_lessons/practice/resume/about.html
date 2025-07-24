@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex about</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #about,
+        #skills,
+        #photos {
+            padding: 50px 0;
+        }
+
+        .container {
+            /* background-color: aquamarine; */
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .my-photo,
+        .description {
+            background-color: aqua;
+            width: 40%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skill-list,
+        .photo-list {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .photo-list {
+            flex-wrap: wrap;
+        }
+
+        li {
+            background-color: aquamarine;
+            width: 32%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+        }
+
+        li:nth-child(even) {
+            background-color: blanchedalmond;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .my-photo,
+            .description,
+            .skill-list li {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .skill-list {
+                flex-wrap: wrap;
+            }
+
+            .photo-list li {
+                width: 48%;
+            }
+
+            .photo-list li:nth-child(3) {
+                order: 2;
+            }
+
+            .photo-list li:nth-child(4) {
+                order: 1;
+            }
+
+            .photo-list li:nth-child(5) {
+                order: 3;
+            }
+
+            .photo-list li:nth-child(6) {
+                order: 4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div class="banner"></div>
+    <section id="about">
+        <div class="container">
+            <div class="my-photo">photo</div>
+            <div class="description">description</div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <ul class="skill-list">
+                <li>skill1</li>
+                <li>skill2</li>
+                <li>skill3</li>
+            </ul>
+        </div>
+    </section>
+    <section id="photos">
+        <div class="container">
+            <ul class="photo-list">
+                <li>img</li>
+                <li>text</li>
+                <li>img</li>
+                <li>text</li>
+                <li>img</li>
+                <li>text</li>
+            </ul>
+    </section>
+    <footer>
+        <p>copyright@2025</p>
+    </footer>
+</body>
+
+</html>
